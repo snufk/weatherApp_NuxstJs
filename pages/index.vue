@@ -74,8 +74,8 @@
     },
     async fetch() {
       this.weather_info = await fetch(
-        'http://api.weatherapi.com/v1/current.json?key=d150f92f637a437a9ff125221201510&q=' + this.palce_name
-        // 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita'
+        // get api key from https://www.weatherapi.com/
+        'http://api.weatherapi.com/v1/current.json?key= your api key &q=' + this.palce_name
       ).then(res => res.json())
     }
   }
