@@ -74,7 +74,7 @@
     },
     async fetch() {
       this.weather_info = await fetch(
-        // get api key from https://www.weatherapi.com/
+        // Get your api key from https://www.weatherapi.com/
         'http://api.weatherapi.com/v1/current.json?key= your api key &q=' + this.palce_name
       ).then(res => res.json())
     }
